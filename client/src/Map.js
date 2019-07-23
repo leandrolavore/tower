@@ -3,7 +3,7 @@ import React from 'react'
 import { compose, withProps, lifecycle } from "recompose"
 
 
-const key = process.env.REACT_APP_GOOLE_MAP_KEY
+const key = process.env.REACT_APP_GOOGLE_MAP_KEY
 
 
 export const Map = compose(withProps({
