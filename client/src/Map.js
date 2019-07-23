@@ -1,7 +1,7 @@
 import {GoogleMap, withScriptjs, withGoogleMap, DirectionsRenderer} from 'react-google-maps'
 import React from 'react'
 import { compose, withProps, lifecycle } from "recompose"
-
+require('dotenv').config()
 
 const key = process.env.REACT_APP_GOOGLE_MAP_KEY
 
