@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import MapContainerHooked from './MapContainerHooked';
 require('dotenv').config()
 
-const key = process.env.REACT_APP_GOOLE_MAP_KEY
+const key = process.env.REACT_APP_GOOGLE_MAP_KEY
 
 export default class Search extends Component {
 
