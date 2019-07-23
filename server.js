@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 5000
 const bodyParser = require('body-parser')
 require('dotenv').config()
-
+const path = require('path')
 const mongoose = require('mongoose')
 const uri = process.env.REACT_APP_MONGO_URI
 const tower = require('./client/src/model/tower')
