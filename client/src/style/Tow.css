@@ -1,0 +1,267 @@
+body, html {
+  height: 100%;
+  background-color: YELLOW;
+  font-family: 'Anton', sans-serif;
+}
+
+@media (min-width: 1050px) {
+  .app {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.titlediv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  font-size: 70%;
+  border-style: none;
+  border-bottom: 2px thin black;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+@media (min-width: 1050px) {
+  .titlediv {
+    width: 100vw;
+    margin-left: 0;
+    height: 20%;
+    font-size: large;
+    text-align: center;
+    padding-left: 30%;
+  }
+  .titlediv img {
+    height: 90px;
+    width: 80px;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-left: 1.5em;
+}
+
+@media (min-width: 1050px) {
+  .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+}
+
+.infopanel {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff3300;
+  border-radius: 20%;
+  -webkit-box-shadow: 2px 3px 3px 3px;
+          box-shadow: 2px 3px 3px 3px;
+  width: 35vh;
+  margin-left: 1em;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #ff8800;
+}
+
+@media (min-width: 1050px) {
+  .infopanel {
+    position: relative;
+    left: 11%;
+    top: 90%;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 1050px) {
+  .infopanel {
+    position: relative;
+    top: 90%;
+    right: -45%;
+  }
+}
+
+@media (min-width: 1050px) {
+  .loading {
+    position: absolute;
+    left: 9em;
+    top: 11em;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 1050px) {
+  .loading {
+    position: relative;
+    top: 90%;
+    right: -45%;
+  }
+}
+
+.mapcontainer {
+  width: 40vh;
+  height: 40vh;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 1050px) {
+  .mapcontainer {
+    width: 40vh;
+    height: 40vh;
+    top: 4em;
+    right: 30%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1050px) {
+  .map {
+    position: absolute;
+    float: right;
+    margin-right: 2em;
+    right: 22%;
+  }
+}
+
+.mapprops {
+  width: 40vh;
+  height: 40vh;
+  left: 1em;
+  margin-top: 1em;
+}
+
+@media (min-width: 1050px) {
+  .mapprops {
+    position: relative;
+    width: 60vh;
+    height: 60vh;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 1050px) {
+  .mapprops {
+    width: 45vh;
+    height: 45vh;
+  }
+}
+
+button {
+  cursor: pointer;
+  background-color: rgba(255, 174, 0, 0);
+  padding: 1em;
+  border-color: aliceblue;
+  border-radius: 500px;
+  font-weight: bold;
+  font-family: 'Squada One', cursive;
+  font-size: large;
+  width: 8em;
+}
+
+.buttonsdiv {
+  text-align: center;
+}
+
+@media (min-width: 1050px) {
+  .buttonsdiv {
+    position: absolute;
+    top: 90%;
+    right: 27%;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 1050px) {
+  .buttonsdiv {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+  }
+}
+
+.labeled_data {
+  display: block;
+}
+
+.labeled_data label {
+  float: left;
+}
+
+.labeled_data .ph {
+  left: 0.5em;
+  text-align: start;
+}
+
+.barrier {
+  display: none;
+}
+
+@media (min-width: 1050px) {
+  .barrier {
+    display: block;
+    position: absolute;
+    left: 16%;
+    bottom: 2em;
+    width: 150px;
+  }
+}
+
+.traffic-cone {
+  display: none;
+}
+
+@media (min-width: 1050px) {
+  .traffic-cone {
+    display: block;
+    position: absolute;
+    left: 11em;
+    top: 1em;
+    width: 60px;
+  }
+}
+
+.navlist {
+  width: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+}
+
+@media (min-width: 1050px) {
+  .navlist {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin-left: 0px;
+    left: 0px;
+    padding: 0px;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+/*# sourceMappingURL=Tow.css.map */
