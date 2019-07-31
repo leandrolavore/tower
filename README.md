@@ -6,9 +6,9 @@ The directory was in XML, so I had to learn how to work with namespaces. And the
 
 Once I had my DB of service providers uploaded I started my app. I worked on my client to get nav-geolocation. I also COPY an array of the towers DB to manipulate.
 
-Once it has the customer's location, the next step is to use Google directions services to compare the distance between the customer and all the towers in my DB. This will create a new key:value for each tower--> distance-from-customer. So then I Sort my array from closer to farthest. It will be displayed in a Google Map as a driving route.
+Once it has the customer's location, the next step is to use Google directions services to compare the distance between the customer and all the towers in my DB. This will create a new key:value for each tower--> distance-from-customer. So then I Sort my array from closer to farthest. It will be displayed in a Google Map as a driving route. 
 
-The user can navigate the array, and the map will display the route each time.
+The user can navigate the array, and the map will display the route each time. 
 
 On the side I created an information panel component to Provide the basic details of each tower as we go through them in the sorted array.
 
