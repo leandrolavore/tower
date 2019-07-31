@@ -48,8 +48,8 @@ export default class App extends Component {
         <img className="conesimg" src={process.env.PUBLIC_URL + '/cone.png'} alt={"there was suposed to be a traffic cone here"}/>
         </div>
         <div className="gitlinks"> 
-        <a><img style={{height: "40px", width: "40px"}} src={process.env.PUBLIC_URL +"../git-white.png"}/></a>
-        <a><img style={{height: "40px", width: "40px"}} src={process.env.PUBLIC_URL +"../linkedin.ico"}/></a>
+        <a href="https://github.com/leandrolavore"><img style={{height: "40px", width: "40px"}} src={process.env.PUBLIC_URL +"../git-white.png"}/></a>
+        <a href="https://www.linkedin.com/in/leandrolavore/"><img style={{height: "40px", width: "40px"}} src={process.env.PUBLIC_URL +"../linkedin.ico"}/></a>
         </div>
 
         </div>
