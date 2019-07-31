@@ -1,68 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For this App I was trying to create something that could have a professional use. Wanted to get away from the traditional API projects and create something that could be used on a daily basis by a company. So I thought of how road assistance companies don't send you their own vehicles, instead they have a data base with contractors that work with them, and they just mediate between the customer and the service provider. I kept it within my area (Gold Coast, QLD, Australia), so I did not have to deal with such a large DB.
 
-## Available Scripts
+So, first I needed a database with Towing service companies, and basic info like their location and phone number. At that moment I was also learning some Python libraries like selenium and beautiful soup, so I created a scrapper to go through a PUBLIC directory.
 
-In the project directory, you can run:
+The directory was in XML, so I had to learn how to work with namespaces. And then I parsed everything into a Json file that I uploaded through console to MongoDB.
 
-### `npm start`
+Once I had my DB of service providers uploaded I started my app. I worked on my client to get nav-geolocation. I also COPY an array of the towers DB to manipulate.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once it has the customer's location, the next step is to use Google directions services to compare the distance between the customer and all the towers in my DB. This will create a new key:value for each tower--> distance-from-customer. So then I Sort my array from closer to farthest. It will be displayed in a Google Map as a driving route.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The user can navigate the array, and the map will display the route each time.
 
-### `npm test`
+On the side I created an information panel component to Provide the basic details of each tower as we go through them in the sorted array.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The design was made with CSS and SASS, and for the google maps I used react-google-maps.
